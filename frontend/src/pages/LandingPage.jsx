@@ -71,6 +71,9 @@ const LandingPage = () => {
             <span className="font-bold text-white text-lg">QLP</span>
           </div>
           <div className="flex items-center gap-3">
+            <Link to="/about" className="text-sm font-medium text-gray-300 hover:text-white transition-colors mr-2">
+              About Us
+            </Link>
             <Link to="/login" className="btn btn-ghost btn-sm text-gray-300">
               Log In
             </Link>
@@ -265,6 +268,7 @@ const LandingPage = () => {
           </div>
           <p className="text-gray-600 text-sm">© {new Date().getFullYear()} QLP. For patients, by design.</p>
           <div className="flex gap-4 text-gray-500 text-sm">
+            <Link to="/about" className="hover:text-gray-300 transition-colors">About Us</Link>
             <a href="#" className="hover:text-gray-300 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-gray-300 transition-colors">Terms of Use</a>
           </div>

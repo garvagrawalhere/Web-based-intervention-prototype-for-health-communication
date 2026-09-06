@@ -6,6 +6,7 @@ import { PageSpinner } from './components/ui/Spinner';
 
 // ─── Lazy-loaded Pages ────────────────────────────────────────────────────────
 const LandingPage = lazy(() => import('./pages/LandingPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const SignupPage = lazy(() => import('./pages/SignupPage'));
 const DemographicsPage = lazy(() => import('./pages/DemographicsPage'));
@@ -44,6 +45,7 @@ function App() {
         <Routes>
           {/* Public */}
           <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<AboutPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/auth/callback" element={<AuthCallbackPage />} />
